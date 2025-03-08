@@ -1,12 +1,16 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send('Welcome to Fahad\'s World!');
 })
 
-app.get('/fahad', (req, res) => {
+app.get('/api/fahad', (req, res) => {
     res.send('Welcome to \'fahad\'s page!');
+})
+
+app.get('/api/ramzan', (req, res) => {
+    res.send('Welcome to \'ramzan\'s page!');
 })
 
 const PORT = process.env.PORT || 3000;
