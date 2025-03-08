@@ -13,6 +13,10 @@ app.get('/api/ramzan', (req, res) => {
     res.send('Welcome to \'ramzan\'s page!');
 })
 
+app.get('/api/eid', (req, res) => {
+    res.send('Welcome to \'Eid\'s page!');
+})
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
