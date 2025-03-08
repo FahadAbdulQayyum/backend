@@ -26,4 +26,4 @@ jobs:
     - run: |
         touch .env
         echo "${{secrets.PROD_ENV_FILE}}" > .env
-    - runs-on: self-hosted
+    - run: pm2 restart BackendAPI
